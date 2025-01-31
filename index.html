@@ -1,11 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3</title>
+    <style type="text/tailwindcss">
+    </style>
+    <!-- DaisyUi CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'button-pri': 'rgb(23, 152, 0)',
+            }
+          }
+        }
+      }
+    </script>
+    <script src="https://kit.fontawesome.com/e54451f4fc.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <!-- Navbar -->
+     <nav class="px-auto md:px-9">
+    <div class="navbar p-9 justify-between">
+      <div>
+        <div  class="flex-initial">
+          <img class="hidden md:block mx-9 h-10"src="c2-assets/logo-header.png">
+          <img src="c2-assets/Group.png" class="md:hidden">
+        </div>
+
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden" style="padding-left: 260px;">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Product</a></li>
+            <li><a>Services</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a class="text-xl">Product</a></li>
+          <!-- <li tabindex="0">
+            <details>
+              <summary>Item-2</summary>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </details>
+          </li> -->
+          <li><a class="text-xl">Services</a></li>
+          <li><a class="text-xl">Contact us</a></li>
+        </ul>
+        
+      </div>
+      <div class="hidden md:block">
+        <i class="fa-solid fa-magnifying-glass mx-7 "></i>
+        <i class="fa-solid fa-cart-shopping "></i>
+        <a class="btn mx-4 px-9 text-xl ">Login</a>
+        <a class="btn bg-button-pri px-9 text-xl ">Register</a>
+      </div>
+    </div>
+    </nav>
+    <!-- Banner -->
+    <banner>
+
+      
+    </banner>
+    <!-- main   -->
+     <main>
+
+     </main>
+     <!-- Footer -->
+      <footer>
+
+      </footer>
 </body>
 </html>
