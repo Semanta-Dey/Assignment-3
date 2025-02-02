@@ -1,0 +1,15 @@
+.font-sora{
+    font-family: "Sora", serif;
+  }
+
+@keyframes textChange {
+    0%, 50% {
+      content: "You Can Count";
+    }
+    51%, 100% {
+      content: "You Can Trust";
+    }
+  }
+  .animated-text {
+    animation: textChange 3s infinite;
+  }
